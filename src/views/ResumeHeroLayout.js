@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles';
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+const arrow = "https://i.ibb.co/rZnGkzv/arrow.jpg";
+
 
 const ResumeHeroLayoutRoot = styled('section')(({ theme }) => ({
   color: theme.palette.common.white,
@@ -42,12 +44,7 @@ function ResumeHeroLayout(props) {
           alignItems: 'center',
         }}
       >
-        <img
-          src="/static/themes/onepirate/productHeroWonder.png"
-          alt="wonder"
-          width="147"
-          height="80"
-        />
+       
         {children}
         <Box
           sx={{
@@ -62,14 +59,7 @@ function ResumeHeroLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-        <Box
-          component="img"
-          src="/static/themes/onepirate/productHeroArrowDown.png"
-          height="16"
-          width="12"
-          alt="arrow down"
-          sx={{ position: 'absolute', bottom: 32 }}
-        />
+      
       </Container>
     </ResumeHeroLayoutRoot>
   );

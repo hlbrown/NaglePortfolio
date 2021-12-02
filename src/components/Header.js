@@ -16,15 +16,7 @@ function Header() {
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="inherit"
-            href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
-          >
-            {'onepirate'}
-          </Link>
+         
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
               color="inherit"
@@ -33,7 +25,7 @@ function Header() {
               href="/premium-themes/onepirate/sign-in/"
               sx={rightLink}
             >
-              {'Sign In'}
+              {'About Me'}
             </Link>
             <Link
               variant="h6"

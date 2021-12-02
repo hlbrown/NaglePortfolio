@@ -2,16 +2,15 @@ import * as React from 'react';
 import Button from '../components/Buttons';
 import Typography from '../components/Typography';
 import ResumeHeroLayout from './ResumeHeroLayout';
+// import portImage from '../assets/portImage.jpg';
+const backgroundImage = "https://i.ibb.co/sCttk6N/port-Image.jpg";
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
 
 export default function ResumeHero() {
   return (
     <ResumeHeroLayout
       sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.
+         backgroundImage:`url(${backgroundImage})`, // Average color of the background image.
         backgroundPosition: 'center',
       }}
     >
@@ -21,8 +20,8 @@ export default function ResumeHero() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+      <Typography color="inherit" align="center" variant="h4" marked="center">
+        Hannah Nagle
       </Typography>
       <Typography
         color="inherit"
@@ -30,20 +29,10 @@ export default function ResumeHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Full-Stack Web Developer
       </Typography>
-      <Button
-        color="secondary"
-        variant="contained"
-        size="large"
-        component="a"
-        href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
-      >
-        Register
-      </Button>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Discover the experience
+        Let's build together
       </Typography>
     </ResumeHeroLayout>
   );

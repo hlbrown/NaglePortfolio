@@ -1,18 +1,20 @@
 import * as React from 'react';
-import Header from '../components/Header';
-import Paper from '../components/Paper';
+import Header from './Header';
+import Paper from './Paper';
 import ProductValues from './ProductValues';
-import Button from '../components/Buttons';
-import Snackbar from '../components/Snackbar';
+import Button from './Buttons';
+import Snackbar from './Snackbar';
 import ResumeHero from '../views/ResumeHero';
+import Projects from './Projects';
+import Bio from './Bio';
 
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
-import Typography from '../components/Typography';
-import TextField from '../components/TextField';
+import Typography from './Typography';
+import TextField from './TextField';
 
 
 const iconStyle = {
@@ -51,19 +53,17 @@ const LANGUAGES = [
 ];
 
 export default function Home() {
-    const text = 'it works';
     return (
         <div>
             <div>
                 <Header />
-                <ResumeHero/>
-                <Paper />
-            </div>
-            <div>
-                
+                <ResumeHero />
+                <Bio />
+               
             </div>
             
             <div>
+                <Projects />
                 <ProductValues />
             </div>
 
