@@ -22,7 +22,7 @@ function Header() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="/#about"
               sx={rightLink}
             >
               {'About Me'}
@@ -30,10 +30,11 @@ function Header() {
             <Link
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
+              href="https://drive.google.com/file/d/1rknRXaov0BN6IjdEWQFYF4hWYpmwszqI/view?usp=sharing"
+              target="_blank"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
-              {'Sign Up'}
+              {'Resume'}
             </Link>
           </Box>
         </Toolbar>

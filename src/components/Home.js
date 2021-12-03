@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Header from './Header';
 import Paper from './Paper';
-import ProductValues from './ProductValues';
 import Button from './Buttons';
 import Snackbar from './Snackbar';
 import ResumeHero from '../views/ResumeHero';
@@ -15,6 +14,15 @@ import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
 import Typography from './Typography';
 import TextField from './TextField';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
+
+import { HashLink } from 'react-router-hash-link';
+
+library.add(faFacebookF, faLinkedin , faFilePdf, faGithub);
 
 
 const iconStyle = {
@@ -34,13 +42,20 @@ function Copyright() {
     return (
         <React.Fragment>
             {'@'}
-            <Link color="inherit" href="">
-                My Website
-            </Link>{' '}
+           {' '}
             {new Date().getFullYear()}
         </React.Fragment>
     );
 }
+function Resume() {
+    return (
+        <React.Fragment>
+            <FontAwesomeIcon color ="inherit"icon={faFilePdf} size="lg" />{' '}
+            <Link color="inherit" href="https://drive.google.com/file/d/1rknRXaov0BN6IjdEWQFYF4hWYpmwszqI/view?usp=sharing">Resume</Link>
+        </React.Fragment>
+    )
+}
+
 const LANGUAGES = [
     {
         code: 'en-US',
@@ -57,14 +72,14 @@ export default function Home() {
         <div>
             <div>
                 <Header />
-                <ResumeHero />
+                <ResumeHero />               
+            </div>
+            <div id="about">
                 <Bio />
-               
             </div>
             
-            <div>
-                <Projects />
-                <ProductValues />
+            <div id="projects">
+                <Projects />               
             </div>
 
         <div>
@@ -83,38 +98,42 @@ export default function Home() {
                                     sx={{ height: 120 }}
                                 >
                                     <Grid item sx={{ display: 'flex' }}>
-                                        <Box component="a" href="https://mui.com/" sx={iconStyle}>
-                                            <img
-                                                src="/static/themes/onepirate/appFooterFacebook.png"
-                                                alt="Facebook"
-                                            />
-                                        </Box>                                        
+                                        <Box component="a" href="https://www.linkedin.com/in/hannahnagle/" target="_blank">
+                                            <FontAwesomeIcon icon={faLinkedin} color="inherit" size="lg"/>
+                                        </Box> 
+                                         <Box component="a" href="https://github.com/hlbrown" target="_blank" sx={{ml:1}}>
+                                            <FontAwesomeIcon icon={faGithub} color="black" size="lg"/>
+                                        </Box>
                                     </Grid>
                                     <Grid item>
-                                        <Copyright />
+                                    <Resume />
+
+                                    </Grid>
+                                    <Grid item>
+                                       
                                     </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
                         <Grid item xs={6} sm={4} md={2}>
-                            <Typography
+                            {/* <Typography
                                 variant="h6"
                                 marked="left"
                                 gutterButtom
                             >
                                 Legal
-                            </Typography>
-                            <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
+                            </Typography> */}
+                            {/* <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
                                 <Box component="li" sx={{py: 0.5}}>
                                 <Link href="">Contact</Link>
                                 </Box>
                                 <Box component="li" sx={{py: 0.5}}>
-                                <Link href="">About</Link>
-                            </Box>
-                            </Box>                            
+                                <Link href="/#about">About</Link>
+                            </Box> */}
+                            {/* </Box>                             */}
                         </Grid>
                         <Grid item xs={6} sm={8} md={4}>
-                            <Typography variant="h6" marked="left" gutterBottom>
+                            {/* <Typography variant="h6" marked="left" gutterBottom>
                                 Language
                             </Typography>
                             <TextField
@@ -131,7 +150,7 @@ export default function Home() {
                                   {language.name}
                                 </option>
                               ))}
-                            </TextField>
+                            </TextField> */}
                         </Grid>
                     </Container>
                 </Typography>

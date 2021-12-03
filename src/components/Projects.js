@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import WeatherApp from './WeatherApp';
 import MixNMatch from './MixNMatch';
 import JustInTime from './JustInTime';
+import NoteTaker from './NoteTaker';
+import BookSearch from './BookSearch';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -88,6 +90,8 @@ export default function ProductCategories() {
       <WeatherApp />
         <MixNMatch />
         <JustInTime />
+        <NoteTaker />
+        <BookSearch />
       </Box>
       
       
