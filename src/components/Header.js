@@ -30,20 +30,21 @@ function Header() {
             <Link
               variant="h6"
               underline="none"
+              href="/#skills"
+              sx={rightLink}
+            >
+              {'Skills'}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
               href="https://drive.google.com/file/d/1rknRXaov0BN6IjdEWQFYF4hWYpmwszqI/view?usp=sharing"
               target="_blank"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
               {'Resume'}
             </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              href="/#skills"
-              sx={rightLink}
-            >
-              {'Skills'}
-            </Link>
+            
           </Box>
         </Toolbar>
       </AppBar>
