@@ -36,6 +36,14 @@ function Header() {
             >
               {'Resume'}
             </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href="/#skills"
+              sx={rightLink}
+            >
+              {'Skills'}
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
