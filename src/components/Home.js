@@ -6,6 +6,7 @@ import Snackbar from './Snackbar';
 import ResumeHero from '../views/ResumeHero';
 import Projects from './Projects';
 import Bio from './Bio';
+import Skills from './Skills';
 
 
 import Box from '@mui/material/Box';
@@ -80,6 +81,9 @@ export default function Home() {
             
             <div id="projects">
                 <Projects />               
+            </div>
+            <div id="skills">
+                <Skills />
             </div>
 
         <div>
