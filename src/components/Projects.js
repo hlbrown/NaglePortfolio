@@ -87,7 +87,7 @@ export default function ProductCategories() {
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         
-      <WeatherApp />
+        <WeatherApp />
         <MixNMatch />
         <JustInTime />
         <NoteTaker />

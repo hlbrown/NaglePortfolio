@@ -137,24 +137,7 @@ export default function Home() {
                             {/* </Box>                             */}
                         </Grid>
                         <Grid item xs={6} sm={8} md={4}>
-                            {/* <Typography variant="h6" marked="left" gutterBottom>
-                                Language
-                            </Typography>
-                            <TextField
-                              select
-                              size="medium"
-                              variant="standard"
-                              SelectProps={{
-                                native: true,
-                              }}
-                              sx={{ mt: 1, width: 150 }}
-                            >
-                              {LANGUAGES.map((language) => (
-                                <option value={language.code} key={language.code}>
-                                  {language.name}
-                                </option>
-                              ))}
-                            </TextField> */}
+                         
                         </Grid>
                     </Container>
                 </Typography>
