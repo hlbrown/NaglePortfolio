@@ -18,7 +18,7 @@ export default function Bio(){
             </Typography>
             <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
                 <Typography variant="subtitle1" sx={{ my: 3 }}>
-                    Full-Stack web developer with a professional background in Law Enforcement. Recently  earned a certificate in Full Stack Web Development from the University of North Carolina of Chapel Hill Coding Boot Camp with newly developed skills in JavaScript, HTML, ES6, React, CSS, Material-UI, BootStrap, and responsive design. Known as a passionate problem solver for developing new and current web projects. I worked on a team of four to develop a single-page MERN App that helps families organize their medical information in the event of an emergency.  For the project I applied responsive web design using Material-UI. I am excited to  utilize my skills as part of a team to build a  better web experience for users. 
+                    Hi I'm Hannah a Full-Stack web developer with a professional background in Law Enforcement. Recently  earned a certificate in Full Stack Web Development from the University of North Carolina of Chapel Hill Coding Boot Camp with newly developed skills in JavaScript, HTML, ES6, React, CSS, Material-UI, BootStrap, and responsive design. Known as a passionate problem solver for developing new and current web projects. I worked on a team of four to develop a single-page MERN App that helps families organize their medical information in the event of an emergency.  For the project I applied responsive web design using Material-UI. I am excited to  utilize my skills as part of a team to build a  better web experience for users. 
                 </Typography>
             </Box>
         </Container>

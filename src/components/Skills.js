@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import LogoCube from '../components/Cube';
 
 import Grid from '@mui/material/Grid';
 
@@ -47,9 +48,13 @@ export default function Skills(){
                                     <li>Material CSS</li>
                                 </ul>
                             </Grid>
+                            <Grid item>
+                              
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
+                  <LogoCube/>
             </Box>
         </Container>
     )
