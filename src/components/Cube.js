@@ -1,5 +1,4 @@
 import * as React from 'react';
-import 'Cube.css';
 import Cube from 'react-3d-cube';
 
 export default function LogoCube () {
